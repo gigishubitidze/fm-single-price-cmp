@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "karla";
+  font-size: 16px;
+  background-color: #e3eef4;
+  padding: 60px;
+}
+
+.price-card {
+  max-width: 680px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 3px 7px 7px 0px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.top-section {
+  background-color: #fff;
+}
+
+.top-section h2 {
+  color: #2bb3b1;
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+
+.top-section h3 {
+  color: #c0df34;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.top-section p {
+  color: #98a6bd;
+  font-weight: 700;
+  opacity: 0.65;
+  line-height: 1.8;
+}
+
+.top-section,
+.bottom-left-section,
+.bottom-right-section {
+  padding: 34px;
+}
+
+.bottom-section {
+  color: #fff;
+}
+
+.bottom-left-section {
+  background-color: #2bb3b1;
+}
+
+.bottom-left-section h3 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.bottom-left-section p {
+  font-weight: 400;
+  font-size: 1.125rem;
+  opacity: 0.85;
+  margin-bottom: 34px;
+}
+
+/* Price start ------------------ */
+.price-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.price {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.period {
+  opacity: 0.6;
+}
+/* Price end ------------------ */
+
+button {
+  height: 56px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  background-color: #c0df34;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #9eba1e;
+  opacity: 0.7;
+}
+
+.bottom-right-section {
+  background-color: #4abebd;
+}
+
+.bottom-right-section h3 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  line-height: 1.4;
+  opacity: 0.7;
+}
+
+@media (min-width: 490px) {
+  .bottom-section {
+    display: flex;
+  }
+
+  .bottom-left-section {
+    flex-basis: 50%;
+  }
+
+  .bottom-right-section {
+    flex-basis: 50%;
+  }
+}
